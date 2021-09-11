@@ -25,7 +25,7 @@ namespace air // Algorithms' Impelementation by Rodolfo
 
 			temp = list[smallest];		// Here comes the swap.
 			list[smallest] = list[i];
-			list[i] = temp;				// Swapped!
+			list[i] = temp;			// Swapped!
 		}
 
 		return list;
