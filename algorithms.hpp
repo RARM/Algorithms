@@ -2,7 +2,9 @@
 #define _ALGORITHMS_HPP_
 
 namespace air {
-	int* SelectionSort(int* list, unsigned size);
+	int* selectionsort(int* list, unsigned size);
+	void mergesort(int* list, size_t first, size_t last);
+	void merge(int* list, size_t first, size_t mid, size_t last);
 }
 
 #endif
