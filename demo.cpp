@@ -4,6 +4,7 @@
 
 int main(void)
 {
+	// --------------------------------------------------------------
 	// SELECTION SORT DEMOSTRATION BELOW.
 	std::cout << "Selection sort demo.\n";
 	int selection_list[] = { 24, 10, -5, 8, 1, 22 };
@@ -18,6 +19,9 @@ int main(void)
 	for (auto num : selection_list) std::cout << num << " ";
 	std::cout << "]\n\n";
 
+
+
+	// --------------------------------------------------------------
 	// MERGER SORT DEMOSTRATION BELOW.
 	std::cout << "Merge sort demo.\n";
 	int merge_list[] = { 13, 12, -10, 55, 13, 10 };
@@ -32,6 +36,9 @@ int main(void)
 	for (auto num : merge_list) std::cout << num << " ";
 	std::cout << "]\n";
 
+
+
+	// --------------------------------------------------------------
 	// END OF DEMOSTRATIONS.
 	return 0;
 }
