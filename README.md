@@ -5,18 +5,21 @@ The "Algorithms" folder contains the first implementations I did for a class (it
 
 ## Contents
 The data structures (and algorithms) that you will find are:
-- Singly-Linked Lists
+- Singly-Linked Lists (Data Structure)
   - Append.
   - Prepend.
   - Insert After.
   - Remove After.
   - Search.
-- Doubly-Linked Lists
+- Doubly-Linked Lists (Data Structure)
   - Append.
   - Prepend.
   - Insert After.
-  - Remove After.
+  - Remove.
   - Search.
+- Linked List Traversal (Algorithms)
+  - Traverse.
+  - Traverse Reverse (Doubly-Linked List only).
 
 I will add more as I work on it.
 
