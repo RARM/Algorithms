@@ -1,14 +1,6 @@
-# Personal Algorithms Collection
-I've documented some algorithms, their function (what they do), and their asymptotic upper bound (Θ-notation) in the table below.
+# Algorithms
 
-I've wrote the implementation in C++ as well. However, the implementation is just for educational purposes. Some libraries may offer these with compatibility for other data types. Find the C++ implementation in [`algorithms.cpp`](algorithms.cpp) and its header file [`algorithms.hpp`](algorithms.hpp).
+This repository contains my implementation (in C++) of some common data structures and algorithms.
 
-| Algorithm      | Function             | Θ-notation     |
-| :------------- | :------------------- | :------------- |
-| Selection Sort | Sort arrays          | Θ(n^2)         |
-| Merge Sort     | Sort arrays          | Θ(n log(n))    |
+The "Algorithms" folder contains the first implementations I did for a class (it only has two algorithms and some information about their time complexity). To open the most recent work, use Visual Studio 2019. Click on "Open > Project/Solution" and select the solution in the `Algorithms.sln` file.
 
-I will implement more algorithms in the future.
-
-## Demo
-A demonstration on how to use these implementation is shown in the [`demo.cpp`](./demo.cpp) file.
