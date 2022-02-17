@@ -1,6 +1,10 @@
 #include "linked_lists.h"
 
 template <typename T>
+rarm::SL_Node<T>::SL_Node()
+    : next{ nullptr } {}
+
+template <typename T>
 void rarm::SL_Node<T>::set_data(T val) {
     this->data = val;
 }
@@ -24,6 +28,21 @@ rarm::SL_List<T>::~SL_List() {
         next_node = cur_node->next;
         delete cur_node;
         cur_node = next_node;
+    }
+
+    return;
+}
+
+template <typename T>
+void rarm::SL_List<T>::append(SL_Node<T>& new_node) {
+    if (this->head == nullptr) { // List is empty.
+        this->head = &new_node;
+        this->tail = &new_node;
+    }
+
+    else { // It is not empty.
+        this->tail->next = &new_node;
+        this->tail = &new_node;
     }
 
     return;

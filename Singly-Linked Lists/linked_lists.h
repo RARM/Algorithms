@@ -5,19 +5,25 @@
 
 // RARM are my initials.
 namespace rarm {
+	// SL stands for Single_Linked
+
 	template <typename T>
-	class SL_List;
+	class SL_List; // Forward declaration. Read more here: https://stackoverflow.com/questions/8967521/class-template-with-template-class-friend-whats-really-going-on-here
 
 	template <typename T>
 	class SL_Node : private Node<T>
 	{
-		// friend void sample_func();
+		// Friend the SL_List so that class can edit private attributes of this one.
 		friend class SL_List<T>;
 
 	public:
+		SL_Node();
+		// ~SL_Node(); // Default constructor should work on this case.
 
-		// Get the current data of this node.
+		// Set the data of the node.
 		void set_data(T val);
+		
+		// Get the current data of this node.
 		T get_data();
 
 	private:
@@ -31,7 +37,7 @@ namespace rarm {
 		SL_List();
 		~SL_List();
 
-		// void append();
+		void append(SL_Node<T>& new_node);
 		// void prepend();
 		// void insert_after();
 		// void remove_after();
